@@ -1,0 +1,49 @@
+@media screen and (max-width: 1280px) {
+
+    /*HOME*/
+    .informacoesiniciais{
+        flex-direction: column; /*Esse comando deixa a maioria do site já responsivo*/
+    }
+
+    .home .informacoesiniciais {
+        align-items: center;
+        display: flex; 
+        flex-direction: column; 
+        gap: 15px;
+        letter-spacing: 2px;
+        padding: 10px 39px; 
+        max-width: 100%;
+        font-size: 14px;
+    }
+    
+
+    .home .informacoesiniciais h1 {
+        color: white;
+        font-size: 30px; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /*Livros*/
+
+    .livrosdisponiveis {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        padding: 10px 4%; 
+    }
+    
+    .livro h3 {
+        font-family: Titulos;
+        margin-top: 1px; 
+        color: #064E32;
+        font-size: 14px;
+    }
+
+    .livro-ativo {
+        width: calc(50% - 20px); 
+        margin-bottom: 12%; 
+        box-sizing: border-box; 
+        text-align: center; 
+    }
+}

@@ -1,0 +1,82 @@
+/* Estilos para a seção .home */
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    background: linear-gradient(#073C28, #00804B);
+    padding: 70px 0 90px; /* Reduzido o padding para torná-lo mais flexível */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos para o texto dentro da área da home */
+.home .informacoesiniciais {
+    align-items: center;
+    display: flex; /*pra que fique certinho e adicione a tag flex*/
+    flex-direction: column; /*pra que o texto e tudo fique em colunas*/
+    gap: 15px; /*Tag para separar os elementos */
+    letter-spacing: 2px; /*Espaço entre as letras*/
+    padding: 70px 200px; /*Espaçamento das letras com as bordas das margens*/
+    max-width: 100%; /*É a ocupação do espaço referente a largura. Quando tem imagem, é 50% e quando não tem, usa 100%, importante pra não quebrar*/
+}
+
+/* Estilos para o título dentro da área da home */
+.home .informacoesiniciais h1 {
+    color: white;
+    font-size: 2em; /* Tamanho do título aumentado para manter a legibilidade */
+    margin-bottom: 20px; /* Espaçamento inferior aumentado */
+}
+
+/* Estilos para os parágrafos dentro da área da home */
+.home .informacoesiniciais p {
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 1.2em; /* Tamanho da fonte aumentado */
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilos para a seção .livros */
+.livros {
+    padding: 70px 0 70px; /* Reduzido o padding para torná-lo mais flexível */
+    background: linear-gradient(#F8CB90, #EFDCA3);
+}
+
+.livros .titulo {
+    text-align: center; /*Colocar o texto no centro*/
+    padding: 60px 0; /*Mais espaçamento*/
+    font-size: 36px; /*Aumentando tamanho da fonte*/
+    color: #064E32;
+}
+
+.livrosdisponiveis {
+    display: flex;
+    flex-wrap: wrap; /* Para que os livros envolvam para a próxima linha quando não houver espaço suficiente */
+    justify-content: space-between; /* Distribui os livros uniformemente ao longo do espaço horizontal */
+    padding: 0 5%; /* Reduzido o padding para torná-lo mais flexível */
+}
+
+.livro-ativo {
+    width: calc(33.33% - 20px); /* Ajuste da largura para telas menores */
+    margin-bottom: 10%; /* Espaçamento inferior entre os livros */
+    box-sizing: border-box; /* Garante que a largura inclua a largura da borda e do preenchimento */
+    text-align: center; /* Centraliza o conteúdo do livro */
+
+}
+
+.livro-ativo img {
+    width: 100%; /* Para garantir que a imagem do livro ocupe todo o espaço disponível */
+    height: auto;
+}
+
+.livro-ativo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave à propriedade transform */
+}
+
+.livro-ativo img:hover {
+    transform: scale(1.1); /* Aumenta a escala quando o mouse passa por cima */
+}
+
